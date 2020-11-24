@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>The Demo HTML</title>
+  <meta name="description" content="The HTML5 Herald" />
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+</head>
+
+<body>
+  <div>
+    <header>
+      <h1>Practice with HTML</h1>
+
+      <nav>
+        <a href="https://www.facebook.com/">Facebook</a> |
+        <a href="https://www.youtube.com/">Youtube</a> |
+        <a href="https://wwww.google.com.vn">Google</a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <aside>
+          <ul>
+            <li>Demo 1</li>
+            <li>Demo 2</li>
+            <li>Demo 3</li>
+          </ul>
+          <ol>
+            <li>Demo 1</li>
+            <li>Demo 2</li>
+            <li>Demo 3</li>
+          </ol>
+        </aside>
+      </div>
+
+      <div>
+        <h2><strong>Register Account</strong></h2>
+
+        <form class="form-group">
+          <label>Tên: </label>
+          <input type="text" class="txtName" />
+          <br />
+          <br />
+          <label>Họ: </label>
+          <input type="text" class="txtSubname" />
+          <br />
+          <br />
+          <input type="radio" name="gender" value="male" checked /> Nam<br>
+          <input type="radio" name="gender" value="female" /> Nữ<br>
+          <input type="radio" name="gender" value="other" /> Khác
+          <br>
+          <br>
+          <label for="">Ngày Sinh</label>
+          <input type="date" class="calendar">
+          <br>
+          <br>
+          <label>Tài Khoản: </label>
+          <input type="text" class="username" />
+          <br />
+          <br />
+          <label>Mật Khẩu: </label>
+          <input type="text" class="password" />
+          <br />
+          <br />
+          <button type="reset" value="reset"><span>Huỷ Bỏ</span></button>
+          <button type="submit" value="submit"><span>Xác Nhận</span></button>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="center">User Manager</h2>
+        <table class="center">
+          <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>User Account</th>
+            <th>Password</th>
+            <th>Birthday</th>
+            <th>Sex</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Nguyen Van B</td>
+            <td>vanb</td>
+            <td>123456</td>
+            <td>12/4/1990</td>
+            <td>Nam</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Nguyen Van c</td>
+            <td>vanc</td>
+            <td>123456</td>
+            <td>14/4/1990</td>
+            <td>Nữ</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Nguyen Van D</td>
+            <td>vand</td>
+            <td>123456</td>
+            <td>17/4/1980</td>
+            <td>Khác</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Nguyen Van A</td>
+            <td>vanb</td>
+            <td>123456</td>
+            <td>12/4/1995</td>
+            <td>Nam</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <img src="../LearnFE/thank-you.jpg">
+  </footer>
+</body>
+
+</html>
