@@ -1,0 +1,29 @@
+.btn {
+  font-family: map-get($font-family, roboto);
+  @include pxRem(font-size, 12);
+  width: 100%;
+  text-transform: uppercase;
+  &:hover {
+    transition: all 0.25s;
+    border: none;
+    text-shadow: none;
+  }
+}
+
+.btn-primary {
+  background-color: map-get($colors, yellow);
+  color: map-get($colors, white);
+  margin-left: 10px;
+  display: inline-block;
+  padding: 0 8px;
+  font-weight: map-get($font-weight, high);
+  border-radius: 3px;
+  &:hover {
+    background-color: map-get($colors, yellow);
+    color: map-get($colors, white);
+    border-radius: 3px;
+  }
+  &:focus {
+    background-color: map-get($colors, bg-focus);
+  }
+}
