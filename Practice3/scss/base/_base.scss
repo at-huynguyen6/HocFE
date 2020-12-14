@@ -1,8 +1,5 @@
 * {
   box-sizing: border-box;
-  &::before, &::after {
-    box-sizing: border-box;
-  } 
 }
 body {
   font-family: $font-body;
@@ -45,8 +42,4 @@ h5 {
 }
 h6 {
   font-size: map-get($h-font-size, h6);
-}
-
-div {
-  display: block;
 }

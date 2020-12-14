@@ -1,0 +1,16 @@
+.header-top {
+    color: map-get($colors, header );
+    background-color: map-get($colors, top-bar );
+    padding: 10px 0;
+    font-size: $font-size-base;
+}
+
+.header-middle {
+    background-color: map-get($colors, white ) ;
+    z-index: 11;
+    padding: 20px 0;
+}
+
+.header-menu {
+    position: relative;
+}
