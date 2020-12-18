@@ -1,5 +1,5 @@
 .btn {
-//   font-family: map-get($font-family, roboto);
+  font-family: $font-body;
   @include pxRem(font-size, 12);
   width: 100%;
   text-transform: uppercase;
@@ -8,6 +8,10 @@
     border: none;
     text-shadow: none;
   }
+}
+
+.btn:active, button:active {
+  outline: none;
 }
 
 .btn-primary {

@@ -5,15 +5,6 @@ $grid-columns: 12;
     @if $size != '' {
       .col-#{$size}-#{$i} {
         width: percentage($i / $grid-columns);
-        position: relative;
-        min-height: 1px;
-        padding-left: 15px; 
-        padding-right: 15px;
-      }
-      @if $size == 'large' {
-        .col-#{$size}-#{$i} {
-          float: left;
-        }
       }
     } @else {
       .col-#{$i} {
@@ -26,40 +17,30 @@ $grid-columns: 12;
 $grid-gutter: 15px;
 $container-width: 100%;
 .container {
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
+  width: $container-width;
   margin-right: auto; 
   margin-left: auto;
-  max-width: $container-width;
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
   &:before,
   &:after {
     box-sizing: border-box;
     content: " ";
     display: table;
   }
-
 }
+
 .row {
   margin-left: -15px;
   margin-right: -15px;
-  &::before {
+  &:before {
     content: " ";
     display: table;
   }
-  &::after {
+  &:after {
     clear: both;
   }
 
-}
-
-// Remove gutters (margin, padding) of row & col
-.row-no-gutters {
-  margin-left: 0;
-  margin-right: 0;
-  > [class*="col-"] {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 /* Grid for all screen
@@ -88,4 +69,10 @@ $container-width: 100%;
  * Ex: col-largest-1, col-largest-2 */
 @include respond-above(largest) {
   @include build-grid(largest);
+}
+
+/* Grid for screen min-width: $xs
+ * Ex: col-xs-1, col-xs-2 */
+@include respond-above(xs) {
+  @include build-grid(xs);
 }

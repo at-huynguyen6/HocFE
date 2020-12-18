@@ -4,6 +4,16 @@
     padding: 10px 0;
     font-size: $font-size-base;
 }
+    .row {
+        align-content: space-between;
+    }
+
+    .col-*-* {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 .header-middle {
     background-color: map-get($colors, white ) ;
@@ -14,3 +24,4 @@
 .header-menu {
     position: relative;
 }
+

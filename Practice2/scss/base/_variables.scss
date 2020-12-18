@@ -10,11 +10,11 @@ $font-weight: (
 
 // == Breakpoints === //
 $breakpoints: (
-  small: 480px,
-  medium: 768px,
-  wide: 960px,
-  large: 1024px,
-  largest: 1280px
+  xs: 480px,
+  small: 768px,
+  medium: 992px,
+  large: 1220px,
+  largest: 1440px
 );
 
 // === Colors === //
@@ -25,7 +25,10 @@ $colors: (
   yellow:#ba933e,
   header:#666,
   bg-focus:#947531,
-  top-bar:#f5f5f5
+  top-bar:#f5f5f5,
+  black-footer:#000,
+  bg-footer:#1a1a1a,
+  links: #999
 );
 
 // === z-index === //
@@ -38,6 +41,11 @@ $zindexs: (
   popover: 1060,
   tooltip: 1070
 );
+
+//=== container ===//
+$container-sm: 768px;
+$container-md: 992px;
+$container-lg: 1220px;
 
 // === Typography === //
 $font-size-base: 0.875rem !default; // 14px
