@@ -7,6 +7,7 @@
 }
 
 .flex-align-center {
+  display: flex;
   align-items: center;
 }
 
@@ -48,3 +49,33 @@
             -webkit-font-smoothing: antialiased;            
           }
   
+.flex-justify-center {
+  justify-content: center;
+} 
+
+.p-static {
+  position: static;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.flex-nowrap {
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: 5px;
+}
+
+.collapse {
+  display: none;
+}

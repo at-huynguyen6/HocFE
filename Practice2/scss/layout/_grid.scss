@@ -13,8 +13,34 @@ $grid-columns: 12;
     }
   }
 }
+
+@mixin build-bgletter ($size){
+  @if $size != '' {
+    .newlettets .hasbg {
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@mixin build-hidden($size) {
+  @if $size != '' {
+    .hidden-#{$size} {
+      display: none;
+    }
+  }
+}
+
+@mixin build-headinggroup($size) {
+  @if $size != '' {
+    .heading-group {
+      margin-bottom: 5px;
+    }
+  }
+}
+
 // End mixins for build grid
-$grid-gutter: 15px;
+$grid-gutter: 30px;
 $container-width: 100%;
 .container {
   width: $container-width;
@@ -43,6 +69,36 @@ $container-width: 100%;
 
 }
 
+@include respond-above (medium){
+  @include build-bgletter(medium);
+}
+
+@include respond-above (small){
+  @include build-headinggroup(small);
+}
+
+@include build-hidden('');
+
+@include respond-above (xs){
+  @include build-hidden(xs);
+}
+
+@include respond-above (small){
+  @include build-hidden(small);
+}
+
+
+@include respond-above (large){
+  @include build-hidden(large);
+  }
+
+@include respond-above (medium){
+  @include build-hidden(medium);
+}
+
+@include respond-above (largest){
+  @include build-hidden(largest);
+  }
 /* Grid for all screen
  * Ex: col-1, col-2 */
 @include build-grid('');

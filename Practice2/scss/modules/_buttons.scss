@@ -1,8 +1,21 @@
 .btn {
-  font-family: $font-body;
-  @include pxRem(font-size, 12);
-  width: 100%;
-  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 9px 20px;
+  font-size: 16px;
+  line-height: 1.45;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   &:hover {
     transition: all 0.25s;
     border: none;
@@ -10,7 +23,8 @@
   }
 }
 
-.btn:active, button:active {
+.btn:active,
+button:active {
   outline: none;
 }
 
@@ -23,11 +37,111 @@
   font-weight: map-get($font-weight, high);
   border-radius: 3px;
   &:hover {
-    background-color: map-get($colors, yellow);
+    background-color: map-get($colors, btn-focus);
     color: map-get($colors, white);
     border-radius: 3px;
   }
   &:focus {
-    background-color: map-get($colors, bg-focus);
+    background-color: map-get($colors, btn-focus);
   }
 }
+
+.btnmenu-mobile {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  color: map-get($colors, links);
+  background-color: transparent;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btnproduct .icons {
+  font-size: 18px;
+}
+
+.btnaddtocart {
+  color: map-get($colors, bg-footer);
+  background-color: #1a1a1a;
+  border-color: map-get($colors, bg-footer);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  height: 50px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  padding: 10px 30px;
+}
+
+.btnproduct {
+  color: map-get($colors, bg-footer);
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 8px 15px;
+  line-height: 20px;
+  height: auto;
+}
+.input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+
+.btn-newletters {
+  font-size: $font-size-base;
+  font-weight: 700;
+  padding: 8px 35px;
+  margin-left: 20px;
+}
+
+.btn-one {
+  display: inline-block;
+  padding: 8px 30px;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 3px;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.btn-readmore {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 14px;
+  border: 2px solid #e1e1e1;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-radius: 5px;
+  padding: 13px 30px;
+  display: inline-block;
+}
+
