@@ -145,3 +145,18 @@ button:active {
   display: inline-block;
 }
 
+.btn-slide {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #222342;
+  padding: 15px 25px;
+  border: 2px solid #222342;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}

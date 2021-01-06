@@ -14,6 +14,17 @@ $grid-columns: 12;
   }
 }
 
+@mixin build-slideshow ($size) {
+  @if $size != '' {
+    .slide-show {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 @mixin build-bgletter ($size){
   @if $size != '' {
     .newlettets .hasbg {
@@ -131,4 +142,8 @@ $container-width: 100%;
  * Ex: col-xs-1, col-xs-2 */
 @include respond-above(xs) {
   @include build-grid(xs);
+}
+
+@include respond-above (small) {
+  @include build-slideshow(small);
 }

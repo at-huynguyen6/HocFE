@@ -79,3 +79,19 @@
 .collapse {
   display: none;
 }
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-primary {
+  color: map-get($colors, yellow);
+}
+
+.icon-arrow-right::before{
+  content: "\e606";
+}
